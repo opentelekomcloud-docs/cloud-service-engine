@@ -25,10 +25,19 @@ otcdocs_auto_name = False
 otcdocs_auto_version = False
 
 project = 'Cloud Service Engine'
-otcdocs_repo_name = 'docs/cloud-service-engine'
+otcdocs_repo_name = 'opentelekomcloud-docs/cloud-service-engine'
 # Those variables are required for edit/bug links
-otcdocs_git_fqdn = 'gitea.eco.tsi-dev.otc-service.com'
-otcdocs_git_type = 'gitea'
+
+# Those variables are needed for indexing into OpenSearch
+otcdocs_doc_environment = 'public'
+otcdocs_doc_link = '/cloud-service-engine/umn/'
+otcdocs_doc_title = 'User Guide'
+otcdocs_doc_type = 'umn'
+otcdocs_service_category = 'application'
+otcdocs_service_title = 'Cloud Service Engine'
+otcdocs_service_type = 'cse'
+otcdocs_search_environment = 'hc_de'
+otcdocs_search_url = "https://opensearch.eco.tsi-dev.otc-service.com/"
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
@@ -78,9 +87,6 @@ html_theme = 'otcdocs'
 # further. For a list of options available for each theme, see the
 # documentation.
 html_theme_options = {
-    "disable_search": True,
-    "site_name": "Internal Documentation Portal",
-    "logo_url": "https://docs-int.otc-service.com",
 }
 
 # The name for this set of Sphinx documents.  If None, it defaults to
