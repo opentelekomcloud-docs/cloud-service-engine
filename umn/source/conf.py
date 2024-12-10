@@ -110,7 +110,7 @@ html_copy_source = False
 latex_documents = [
     ('index',
      'cse-umn.tex',
-     u'Cloud Service Engine - User Guide',
+    u'Cloud Service Engine - User Guide',
      u'OpenTelekomCloud', 'manual'),
 ]
 
